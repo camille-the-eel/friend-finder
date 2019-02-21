@@ -1,0 +1,28 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "\"Matches you with a new friend\"",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "\"echo hello\"",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camille-the-eel/friendfinder.git"
+  },
+  "keywords": [
+    "matchmaker"
+  ],
+  "author": "camille-the-eel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/camille-the-eel/friendfinder/issues"
+  },
+  "homepage": "https://github.com/camille-the-eel/friendfinder#readme"
+}
