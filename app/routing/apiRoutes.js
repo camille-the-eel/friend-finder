@@ -17,8 +17,8 @@ module.exports = function(app) {
         //JSON OBJECT IS PUSHED TO JS ARRAY, SERVER SAVES DATA TO THE SPECIFIED (FRIENDSDATA) ARRAY
         friendsData.push(req.body);
         
-        var dataBlah = req.body;
-        console.log(dataBlah);
+        // var dataBlah = JSON.stringify(req.body);
+        // console.log(dataBlah);
 
         //THE LAST SUBMIT IS SET AS THE NEWEST USER (AWAITING COMPARISON)
         var newFriendData = req.body.survey;
@@ -35,6 +35,7 @@ module.exports = function(app) {
                 eachFriendsTotal += (Math.abs(parseInt(friendsData[i].survey[j]) - parseInt(newFriendData[j])))
                 console.log("Each" + eachFriendsTotal);
             }
+            console.log(friendsData[0]);
             //add new key to each friends object, totalDif: set to the eachFriendsTotal
             //then push each object into friendsTotalArr
             //then sort this array of objects by the totalDif key (not inside this for loop tho, down below)
