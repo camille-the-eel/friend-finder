@@ -15,5 +15,6 @@ module.exports = function(app) {
     //JSON OBJECT IS PUSHED TO JS ARRAY, SERVER SAVES DATA TO THE SPECIFIED (FRIENDSDATA) ARRAY
     app.post("/api/friends", function(req, res) {
         friendsData.push(req.body);
+        res.json(true);
     });
 }
