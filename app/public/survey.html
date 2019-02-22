@@ -33,19 +33,19 @@
             <div class="container">
                 <span>Strongly Disagree</span>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input position-static" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1" aria-label="1">
+                        <input class="form-check-input position-static" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1" aria-label="1" required>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input position-static" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="2" aria-label="2">
+                        <input class="form-check-input position-static" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="2" aria-label="2" required>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input position-static" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="3" aria-label="3">
+                        <input class="form-check-input position-static" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="3" aria-label="3" required>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input position-static" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="4" aria-label="4">
+                        <input class="form-check-input position-static" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="4" aria-label="4" required>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input position-static" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="5" aria-label="5">
+                        <input class="form-check-input position-static" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="5" aria-label="5" required>
                     </div>
                 <span>Strongly Agree</span>
             </div>
@@ -300,8 +300,6 @@ $("#submit").on("click", function(event) {
             $("input[name='inlineRadioOptions10']:checked").val()
         ]
     };
-
-    alert("You have: " + newFriend.survey);
 
     //INSERT VALIDATION FOR FORM COMPLETION
 
