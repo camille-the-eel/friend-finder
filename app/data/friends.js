@@ -3,7 +3,7 @@
 var friendsArray = [
     {
         friendName: "Vanessa",
-        photo: "vanessa.jpg",
+        photo: "https://i.imgur.com/HN7fY83.jpg",
         survey: [
             1,
             4,
@@ -19,7 +19,7 @@ var friendsArray = [
     },
     {
         friendName: "Dalton",
-        photo: "dalton.jpg",
+        photo: "https://i.imgur.com/W0OlQm9.jpg",
         survey: [
             4,
             2,
@@ -35,7 +35,7 @@ var friendsArray = [
     },
     {
         friendName: "Shelly",
-        photo: "shelly.png",
+        photo: "https://i.imgur.com/qa02IQQ.jpg",
         survey: [
             3,
             1,
