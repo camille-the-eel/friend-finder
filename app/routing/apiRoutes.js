@@ -29,25 +29,20 @@ module.exports = function(app) {
             for (var j = 0; j < 10; j++) {
                 eachFriendsTotal += (Math.abs(parseInt(friendsData[i].survey[j]) - parseInt(newFriendData[j])))
 
-                //ADDS NEW KEY TO EACH FRIENDS OBJECT, TOTALDIF: SET TO THE EACHFRIENDSTOTAL
+                //ADDS NEW KEY TO EACH "FRIENDS" OBJECT, TOTALDIF: SET TO THE EACHFRIENDSTOTAL
                 friendsData[i].difTotal = parseInt(eachFriendsTotal);
             }
-            console.log(friendsData[i]);
 
-           
-            //then push each object into friendsTotalArr
-            //then sort this array of objects by the totalDif key (not inside this for loop tho, down below)
-            //then when you grab index 0 it will have all the info of the match
-            friendsTotalArr.push(friendsData[i].difTotal);
-            console.log("Arr" + friendsTotalArr);
+            //EACH OBJECT PUSHED INTO frinedsTotalArr
+            friendsTotalArr.push(friendsData[i]);
         };
         
-        //SORTING THE TOTAL DIFFERENCES OF THE FRIENDS INTO ASCENDING ORDER (LOWEST DIFFERENCE AT INDEX 0)
-        var sortedFriendMatches = friendsTotalArr.sort(function(a, b){return a - b});
-        console.log("sort" + sortedFriendMatches);
+        //SORTING THE OBJECTS IN THE friendsTotalArr BY totalDif KEY, ASCENDING ORDER (INDEX 0 LOWEST AMOUNT)
+        var sortedFriendMatches = friendsTotalArr.sort(function (a, b) {
+            return parseFloat(a.difTotal) - parseFloat(b.difTotal)
+        });
+        
         var bestMatch = sortedFriendMatches[0];
-
-        console.log(bestMatch);
 
         res.json(bestMatch);
 
