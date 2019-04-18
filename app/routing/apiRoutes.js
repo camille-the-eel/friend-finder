@@ -37,7 +37,7 @@ module.exports = function(app) {
             friendsTotalArr.push(friendsData[i]);
         };
         
-        //SORTING THE OBJECTS IN THE friendsTotalArr BY totalDif KEY, ASCENDING ORDER (INDEX 0 LOWEST AMOUNT)
+        //SORTING THE OBJECTS IN THE friendsTotalArr BY totalDif KEY, ASCENDING ORDER (INDEX 0 LOWEST)
         var sortedFriendMatches = friendsTotalArr.sort(function (a, b) {
             return parseFloat(a.difTotal) - parseFloat(b.difTotal)
         });
